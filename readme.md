@@ -1,8 +1,8 @@
-**## Точка с запятой.**
+## **Точка с запятой.**
 ***
 
 **1. Всегда ставь точку с запятой у последнего свойства в блоке.**
->stylelint: ```[declaration-block-trailing-semicolon](https://)```
+>stylelint: ```[declaration-block-trailing-semicolon](https://stylelint.io/user-guide/rules/indentation#indentation)```
 
 :x: не надо так :point_down:
 ```
