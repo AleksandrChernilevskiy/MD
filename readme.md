@@ -541,7 +541,9 @@ li {}
 ```
 
 **9. Используй строчные буквы для единиц измерений.**
->stylelint: {[unit-case](unit-case)}
+>stylelint: ```
+[unit-case](unit-case)
+```
 
 :x: не надо так :point_down:
 ```
