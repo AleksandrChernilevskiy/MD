@@ -1,8 +1,7 @@
 ## **Точка с запятой.**
-***
 
 **1. Всегда ставь точку с запятой у последнего свойства в блоке.**
->stylelint: ```[declaration-block-trailing-semicolon](https://stylelint.io/user-guide/rules/indentation#indentation)```
+>stylelint: ```[declaration-block-trailing-semicolon] (https://stylelint.io/user-guide/rules/indentation#indentation)```
 
 :x: не надо так :point_down:
 ```
@@ -19,7 +18,7 @@ a { @include foo; }
 ```
 
 **2. Не ставь лишние точки с запятой.**
->stylelint: ```[no-extra-semicolons](no-extra-semicolons)```
+>stylelint: ```[no-extra-semicolons] (no-extra-semicolons)```
 
 :x: не надо так :point_down:
 ```
@@ -58,11 +57,10 @@ a {
 ```
 
 
-##**В строку или в столбик.**
-***
+## **В строку или в столбик.**
 
 **1. Если свойств несколько, лучше писать их в столбик.**
->stylelint: ```[declaration-block-single-line-max-declarations](declaration-block-single-line-max-declarations)```
+>stylelint: ```[declaration-block-single-line-max-declarations] (declaration-block-single-line-max-declarations)```
 
 :x: не надо так :point_down:
 ```
@@ -83,7 +81,7 @@ a {
 ```
 
 **2. В многострочных блоках пиши каждое свойство с новой строки(в столбик).**
->stylelint: ```[declaration-block-semicolon-newline-after](declaration-block-semicolon-newline-after)```
+>stylelint: ```[declaration-block-semicolon-newline-after] (declaration-block-semicolon-newline-after)```
 
 :x: не надо так :point_down:
 ```
@@ -101,7 +99,7 @@ a {
 ```
 
 **3. Перечисляй селекторы в столбик (после запятой начинай с новой строки).**
->stylelint: ```[selector-list-comma-newline-after](selector-list-comma-newline-after)```
+>stylelint: ```[selector-list-comma-newline-after] (selector-list-comma-newline-after)```
 
 :x: не надо так :point_down:
 ```
@@ -121,11 +119,10 @@ b { color: pink; }
 ```
 
 
-##**: или :: для псевдоэлементов.**
-***
+## **: или :: для псевдоэлементов.**
 
 **Используй двойное двоеточие для псевдоэлементов.**
->stylelint: ```[selector-pseudo-element-colon-notation](selector-pseudo-element-colon-notation)```
+>stylelint: ```[selector-pseudo-element-colon-notation] (selector-pseudo-element-colon-notation)```
 
 :x: не надо так :point_down:
 ```
@@ -146,11 +143,10 @@ li::marker { font-variant-numeric: tabular-nums; }
 ```
 
 
-##**Пустые блоки.**
-***
+## **Пустые блоки.**
 
 **Не оставляй пустые блоки со стилями.**
->stylelint: ```[block-no-empty](block-no-empty)```
+>stylelint: ```[block-no-empty] (block-no-empty)```
 
 :x: не надо так :point_down:
 ```
@@ -176,11 +172,10 @@ a {
 ```
 
 
-##**Ноль, что с ним делать.**
-***
+## **Ноль, что с ним делать.**
 
 **1. Не ставь ведущий ноль у дробных чисел.**
->stylelint: ```[number-leading-zero](number-leading-zero)```
+>stylelint: ```[number-leading-zero] (number-leading-zero)```
 
 :x: не надо так :point_down:
 ```
@@ -195,7 +190,7 @@ a { transform: translate(2px, .4px); }
 ```
 
 **2. Не ставь единицы измерения длины, если значение нулевое.**
->stylelint: ```[length-zero-no-unit](length-zero-no-unit)```
+>stylelint: ```[length-zero-no-unit] (length-zero-no-unit)```
 
 Длина - это измерение , которое представляет собой число, за которым сразу следует идентификатор единицы измерения . Однако для нулевой длины идентификатор единицы является необязательным. Единицы длины: em, ex, ch, vw, vh, cm, mm, in, pt, pc, px, rem, vmin, и vmax.
 
@@ -213,7 +208,7 @@ a { top: 2in; }
 a { top: 1.001vh }
 ```
 **3. Не ставь нули в конце чисел, если они не несут смысла.**
->stylelint: ```[number-no-trailing-zeros](number-no-trailing-zeros)```
+>stylelint: ```[number-no-trailing-zeros] (number-no-trailing-zeros)```
 
 :x: не надо так :point_down:
 ```
@@ -228,11 +223,10 @@ a { top: 1.01px }
 ```
 
 
-##**Специфичность.**
-***
+## **Специфичность.**
 
 **1. Не пиши селекторы с меньшей специфичностью после селекторов с большей специфичностью.**
->stylelint: ```[no-descending-specificity](no-descending-specificity)```
+>stylelint: ```[no-descending-specificity] (no-descending-specificity)```
 
 Когда два селектора имеют одинаковую специфичность, приоритет имеет тот , который появляется последним . Однако ситуация отличается, когда один из селекторов имеет более высокую специфичность. В этом случае исходный порядок не имеет значения: селектор с более высокой специфичностью победит, даже если он появится первым.
 
@@ -292,7 +286,7 @@ a {}
 ```
 
 **2. Не пиши сокращенные свойства после связных свойств.**
->stylelint: ```[declaration-block-no-shorthand-property-overrides](declaration-block-no-shorthand-property-overrides)```
+>stylelint: ```[declaration-block-no-shorthand-property-overrides] (declaration-block-no-shorthand-property-overrides)```
 
 Сокращенные свойства могут переопределить связные свойства.
 
@@ -342,11 +336,11 @@ a {
 }
 ```
 
-##**Шрифты.**
-***
+
+## **Шрифты.**
 
 **Ставь всегда тип шрифта(serif, sans-serif, cursive, fantasy или monospace).**
->stylelint: ```[font-family-no-missing-generic-family-keyword](font-family-no-missing-generic-family-keyword)```
+>stylelint: ```[font-family-no-missing-generic-family-keyword] (font-family-no-missing-generic-family-keyword)```
 
 Тип шрифта:
 + может стоять в любом месте в списке шрифтов;
@@ -366,11 +360,11 @@ a { font: inherit; }
 a { font: caption; }
 ```
 
-##**Строчные или заглавные буквы.**
-***
+
+## **Строчные или заглавные буквы.**
 
 **1. Называй at-rules (правила) строчными буквами.**
->stylelint: ```[at-rule-name-case](at-rule-name-case)```
+>stylelint: ```[at-rule-name-case] (at-rule-name-case)```
 
 Тип шрифта:
 + может стоять в любом месте в списке шрифтов;
@@ -393,7 +387,7 @@ a { font: caption; }
 ```
 
 **2. Называй функции строчными буквами.**
->stylelint: ```[function-name-case](function-name-case)```
+>stylelint: ```[function-name-case] (function-name-case)```
 
 :x: не надо так :point_down:
 ```
@@ -422,7 +416,7 @@ a {
 ```
 
 **3. Для цветов в шестнадцетиричном формате используй строчные буквы.**
->stylelint: ```[color-hex-case](color-hex-case)```
+>stylelint: ```[color-hex-case] (color-hex-case)```
 
 :x: не надо так :point_down:
 ```
@@ -436,7 +430,7 @@ a { color: #fff; }
 ```
 
 **4. Для названий медиа-запрсов используй строчные буквы.**
->stylelint: ```[media-feature-name-case](media-feature-name-case)```
+>stylelint: ```[media-feature-name-case] (media-feature-name-case)```
 
 :x: не надо так :point_down:
 ```
@@ -455,7 +449,7 @@ a { color: #fff; }
 ```
 
 **5. Пиши свойства строчными буквами.**
->stylelint: ```[property-case](property-case)```
+>stylelint: ```[property-case] (property-case)```
 
 :x: не надо так :point_down:
 ```
@@ -496,7 +490,7 @@ a {
 ```
 
 **6. Используй строчные буквы для селекоторов псевдоклассов.**
->stylelint: ```[selector-pseudo-class-case](selector-pseudo-class-case)```
+>stylelint: ```[selector-pseudo-class-case] (selector-pseudo-class-case)```
 
 :x: не надо так :point_down:
 ```
@@ -515,7 +509,7 @@ a:hover {}
 ```
 
 **7. Используй строчные буквы для селекоторов псевдоэлементов.**
->stylelint: ```[selector-pseudo-element-case](selector-pseudo-element-case)```
+>stylelint: ```[selector-pseudo-element-case] (selector-pseudo-element-case)```
 
 :x: не надо так :point_down:
 ```
@@ -536,7 +530,7 @@ input::-moz-placeholder {}
 ```
 
 **8. Используй строчные буквы для типов селекторов.**
->stylelint: ```[selector-type-case](selector-type-case)```
+>stylelint: ```[selector-type-case] (selector-type-case)```
 
 :x: не надо так :point_down:
 ```
@@ -551,7 +545,7 @@ li {}
 ```
 
 **9. Используй строчные буквы для единиц измерений.**
->stylelint: ```[unit-case](unit-case)```
+>stylelint: ```[unit-case] (unit-case)```
 
 :x: не надо так :point_down:
 ```
@@ -583,10 +577,10 @@ a {
 ```
 
 
-#**CSS**
+## **CSS**
 ***
 
-###**Форматирование**
+### **Форматирование**
 +Используйте мягкие табуляции (2 пробела) для отступов.
 +Подчеркивание и PascalCasing допустимы, если вы используете БЭМ (см. OOCSS и BEM ниже).
 +Не используйте селекторы ID.
@@ -596,7 +590,7 @@ a {
 +Поместите закрывающие фигурные скобки }объявлений правил на новую строку.
 +Между объявлениями правил вставляйте пустые строки.
 
-####**Bad**
+#### **Bad**
 
 ```
 .avatar{
@@ -609,7 +603,7 @@ a {
   // ...
 }
 ```
-####**Good**
+#### **Good**
 
 ```
 .avatar {
@@ -624,7 +618,7 @@ a {
 }
 ```
 
-###**Комментарии**
+### **Комментарии**
 +Предпочитайте строчные комментарии ( ```//```в Sass-land), чтобы блокировать комментарии.
 +Предпочитайте комментарии в их собственной строке. Избегайте комментариев в конце строки.
 +Напишите подробные комментарии для кода, который не самодокументируется:
@@ -632,7 +626,7 @@ a {
  -Совместимость или специфичные для браузера хаки
 
 
-###**Хуки JavaScript**
+### **Хуки JavaScript**
 
 Избегайте привязки к одному и тому же классу как в CSS, так и в JavaScript. Объединение этих двух часто приводит, как минимум, к потере времени на рефакторинг, когда разработчик должен ссылаться на каждый класс, который они изменяют, и в худшем случае разработчики боятся вносить изменения из-за страха нарушить функциональность.
 
@@ -641,11 +635,11 @@ a {
 < button  class = " btn btn-primary js-request-to-book " > Запрос на бронирование </ button >
 ```
 
-###**Граница**
+### **Граница**
 
 Используйте ```0``` вместо, ```none``` чтобы указать, что у стиля нет границы.
 
-###**Bad**
+#### **Bad**
 
 ```
 .foo {
@@ -653,7 +647,7 @@ a {
 }
 ```
 
-###**Good**
+#### **Good**
 
 ```
 .foo {
