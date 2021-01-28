@@ -1,7 +1,7 @@
 ## **Точка с запятой.**
 
 **1. Всегда ставь точку с запятой у последнего свойства в блоке.**
->stylelint: [declaration-block-trailing-semicolon](https://stylelint.io/user-guide/rules/indentation#indentation)
+>eslint: [declaration-block-trailing-semicolon](https://stylelint.io/user-guide/rules/indentation#indentation)
 
 :x: не надо так :point_down:
 ```
@@ -18,7 +18,7 @@ a { @include foo; }
 ```
 
 **2. Не ставь лишние точки с запятой.**
->stylelint: [no-extra-semicolons](no-extra-semicolons)
+>eslint: [no-extra-semicolons](no-extra-semicolons)
 
 :x: не надо так :point_down:
 ```
@@ -60,7 +60,7 @@ a {
 ## **В строку или в столбик.**
 
 **1. Если свойств несколько, лучше писать их в столбик.**
->stylelint: [declaration-block-single-line-max-declarations](declaration-block-single-line-max-declarations)
+>eslint: [declaration-block-single-line-max-declarations](declaration-block-single-line-max-declarations)
 
 :x: не надо так :point_down:
 ```
@@ -81,7 +81,7 @@ a {
 ```
 
 **2. В многострочных блоках пиши каждое свойство с новой строки(в столбик).**
->stylelint: [declaration-block-semicolon-newline-after](declaration-block-semicolon-newline-after)
+>eslint: [declaration-block-semicolon-newline-after](declaration-block-semicolon-newline-after)
 
 :x: не надо так :point_down:
 ```
@@ -99,7 +99,7 @@ a {
 ```
 
 **3. Перечисляй селекторы в столбик (после запятой начинай с новой строки).**
->stylelint: [selector-list-comma-newline-after](selector-list-comma-newline-after)
+>eslint: [selector-list-comma-newline-after](selector-list-comma-newline-after)
 
 :x: не надо так :point_down:
 ```
@@ -122,7 +122,7 @@ b { color: pink; }
 ## **: или :: для псевдоэлементов.**
 
 **Используй двойное двоеточие для псевдоэлементов.**
->stylelint: [selector-pseudo-element-colon-notation](selector-pseudo-element-colon-notation)
+>eslint: [selector-pseudo-element-colon-notation](selector-pseudo-element-colon-notation)
 
 :x: не надо так :point_down:
 ```
@@ -146,7 +146,7 @@ li::marker { font-variant-numeric: tabular-nums; }
 ## **Пустые блоки.**
 
 **Не оставляй пустые блоки со стилями.**
->stylelint: [block-no-empty](block-no-empty)
+>eslint: [block-no-empty](block-no-empty)
 
 :x: не надо так :point_down:
 ```
@@ -175,7 +175,7 @@ a {
 ## **Ноль, что с ним делать.**
 
 **1. Не ставь ведущий ноль у дробных чисел.**
->stylelint: [number-leading-zero](number-leading-zero)
+>eslint: [number-leading-zero](number-leading-zero)
 
 :x: не надо так :point_down:
 ```
@@ -190,7 +190,7 @@ a { transform: translate(2px, .4px); }
 ```
 
 **2. Не ставь единицы измерения длины, если значение нулевое.**
->stylelint: [length-zero-no-unit](length-zero-no-unit)
+>eslint: [length-zero-no-unit](length-zero-no-unit)
 
 Длина - это измерение , которое представляет собой число, за которым сразу следует идентификатор единицы измерения . Однако для нулевой длины идентификатор единицы является необязательным. Единицы длины: em, ex, ch, vw, vh, cm, mm, in, pt, pc, px, rem, vmin, и vmax.
 
@@ -208,7 +208,7 @@ a { top: 2in; }
 a { top: 1.001vh }
 ```
 **3. Не ставь нули в конце чисел, если они не несут смысла.**
->stylelint: [number-no-trailing-zeros](number-no-trailing-zeros)
+>eslint: [number-no-trailing-zeros](number-no-trailing-zeros)
 
 :x: не надо так :point_down:
 ```
@@ -226,7 +226,7 @@ a { top: 1.01px }
 ## **Специфичность.**
 
 **1. Не пиши селекторы с меньшей специфичностью после селекторов с большей специфичностью.**
->stylelint: [no-descending-specificity](no-descending-specificity)
+>eslint: [no-descending-specificity](no-descending-specificity)
 
 Когда два селектора имеют одинаковую специфичность, приоритет имеет тот , который появляется последним . Однако ситуация отличается, когда один из селекторов имеет более высокую специфичность. В этом случае исходный порядок не имеет значения: селектор с более высокой специфичностью победит, даже если он появится первым.
 
@@ -286,7 +286,7 @@ a {}
 ```
 
 **2. Не пиши сокращенные свойства после связных свойств.**
->stylelint: [declaration-block-no-shorthand-property-overrides](declaration-block-no-shorthand-property-overrides)
+>eslint: [declaration-block-no-shorthand-property-overrides](declaration-block-no-shorthand-property-overrides)
 
 Сокращенные свойства могут переопределить связные свойства.
 
@@ -340,7 +340,7 @@ a {
 ## **Шрифты.**
 
 **Ставь всегда тип шрифта(serif, sans-serif, cursive, fantasy или monospace).**
->stylelint: [font-family-no-missing-generic-family-keyword](font-family-no-missing-generic-family-keyword)
+>eslint: [font-family-no-missing-generic-family-keyword](font-family-no-missing-generic-family-keyword)
 
 Тип шрифта:
 + может стоять в любом месте в списке шрифтов;
@@ -364,7 +364,7 @@ a { font: caption; }
 ## **Строчные или заглавные буквы.**
 
 **1. Называй at-rules (правила) строчными буквами.**
->stylelint: [at-rule-name-case](at-rule-name-case)
+>eslint: [at-rule-name-case](at-rule-name-case)
 
 :x: не надо так :point_down:
 ```
@@ -383,7 +383,7 @@ a { font: caption; }
 ```
 
 **2. Называй функции строчными буквами.**
->stylelint: [function-name-case](function-name-case)
+>eslint: [function-name-case](function-name-case)
 
 :x: не надо так :point_down:
 ```
@@ -412,7 +412,7 @@ a {
 ```
 
 **3. Для цветов в шестнадцетиричном формате используй строчные буквы.**
->stylelint: [color-hex-case](color-hex-case)
+>eslint: [color-hex-case](color-hex-case)
 
 :x: не надо так :point_down:
 ```
@@ -426,7 +426,7 @@ a { color: #fff; }
 ```
 
 **4. Для названий медиа-запрсов используй строчные буквы.**
->stylelint: [media-feature-name-case](media-feature-name-case)
+>eslint: [media-feature-name-case](media-feature-name-case)
 
 :x: не надо так :point_down:
 ```
@@ -445,7 +445,7 @@ a { color: #fff; }
 ```
 
 **5. Пиши свойства строчными буквами.**
->stylelint: [property-case](property-case)
+>eslint: [property-case](property-case)
 
 :x: не надо так :point_down:
 ```
@@ -486,7 +486,7 @@ a {
 ```
 
 **6. Используй строчные буквы для селекоторов псевдоклассов.**
->stylelint: [selector-pseudo-class-case](selector-pseudo-class-case)
+>eslint: [selector-pseudo-class-case](selector-pseudo-class-case)
 
 :x: не надо так :point_down:
 ```
@@ -505,7 +505,7 @@ a:hover {}
 ```
 
 **7. Используй строчные буквы для селекоторов псевдоэлементов.**
->stylelint: [selector-pseudo-element-case](selector-pseudo-element-case)
+>eslint: [selector-pseudo-element-case](selector-pseudo-element-case)
 
 :x: не надо так :point_down:
 ```
@@ -526,7 +526,7 @@ input::-moz-placeholder {}
 ```
 
 **8. Используй строчные буквы для типов селекторов.**
->stylelint: [selector-type-case](selector-type-case)
+>eslint: [selector-type-case](selector-type-case)
 
 :x: не надо так :point_down:
 ```
@@ -541,7 +541,7 @@ li {}
 ```
 
 **9. Используй строчные буквы для единиц измерений.**
->stylelint: [unit-case](unit-case)
+>eslint: [unit-case](unit-case)
 
 :x: не надо так :point_down:
 ```
@@ -573,82 +573,326 @@ a {
 ```
 
 
-## **CSS**
-***
 
-### **Форматирование**
-+ Используйте мягкие табуляции (2 пробела) для отступов.
-+ Подчеркивание и PascalCasing допустимы, если вы используете БЭМ (см. OOCSS и BEM ниже).
-+ Не используйте селекторы ID.
-+ При использовании нескольких селекторов в объявлении правила дайте каждому селектору отдельную строку.
-+ В {объявлениях правил ставьте пробел перед открывающей скобкой .
-+ В свойствах ставьте пробел после :символа , но не перед ним .
-+ Поместите закрывающие фигурные скобки }объявлений правил на новую строку.
-+ Между объявлениями правил вставляйте пустые строки.
+## **Соглашение об именовании.**
 
-#### **Bad**
+**1. Избегайте однобуквенных названий.**
+>eslint: [id-length](id-length)
 
+:x: не надо так :point_down:
 ```
-.avatar{
-    border-radius:50%;
-    border:2px solid white; }
-.no, .nope, .not_good {
-    // ...
-}
-#lol-no {
-  // ...
-}
-```
-#### **Good**
-
-```
-.avatar {
-  border-radius: 50%;
-  border: 2px solid white;
-}
-
-.one,
-.selector,
-.per-line {
+function q() {
   // ...
 }
 ```
 
-### **Комментарии**
-+ Предпочитайте строчные комментарии ( ```//```в Sass-land), чтобы блокировать комментарии.
-+ Предпочитайте комментарии в их собственной строке. Избегайте комментариев в конце строки.
-+ Напишите подробные комментарии для кода, который не самодокументируется:
- - Использование z-индекса
- - Совместимость или специфичные для браузера хаки
-
-
-### **Хуки JavaScript**
-
-Избегайте привязки к одному и тому же классу как в CSS, так и в JavaScript. Объединение этих двух часто приводит, как минимум, к потере времени на рефакторинг, когда разработчик должен ссылаться на каждый класс, который они изменяют, и в худшем случае разработчики боятся вносить изменения из-за страха нарушить функциональность.
-
-Мы рекомендуем создавать для привязки классы, специфичные для JavaScript, с префиксом .js-:
+:white_check_mark: надо так :point_down:
 ```
-< button  class = " btn btn-primary js-request-to-book " > Запрос на бронирование </ button >
-```
-
-### **Граница**
-
-Используйте ```0``` вместо, ```none``` чтобы указать, что у стиля нет границы.
-
-#### **Bad**
-
-```
-.foo {
-  border: none;
+function query() {
+  // ...
 }
 ```
 
-#### **Good**
+**Используйте camelCase для названий переменных, объектов и функций.**
+>eslint: [camelcase](camelcase)
 
+:x: не надо так :point_down:
 ```
-.foo {
-  border: 0;
+const OBJEcttsssss = {};
+const this_is_my_object = {};
+function c() {}
+```
+
+:white_check_mark: надо так :point_down:
+```
+const thisIsMyObject = {};
+function thisIsMyFunction() {}
+```
+
+**3. Используйте PascalCase для именования конструкторов или классов.**
+>eslint: [new-cap](new-cap)
+
+:x: не надо так :point_down:
+```
+function user(options) {
+  this.name = options.name;
+}
+
+const bad = new user({
+  name: 'nope',
+});
+```
+
+:white_check_mark: надо так :point_down:
+```
+class User {
+  constructor(options) {
+    this.name = options.name;
+  }
+}
+
+const good = new User({
+  name: 'yup',
+});
+```
+
+**4. Не используйте нижнее подчеркивание в начале или конце названий.**
+>eslint: [no-underscore-dangle](no-underscore-dangle)
+
+:x: не надо так :point_down:
+```
+let name_ = 'Max';
+foo._bar();
+```
+
+:white_check_mark: надо так :point_down:
+```
+let name = 'Max';
+foo.bar();
+```
+
+**Исключения:**
++ разрешено использовать нижнее подчеркивание после this.
+Так принято помечать псевдоприватные поля.
+
+:white_check_mark: надо так :point_down:
+```
+this._bar();
+let a = this.foo_;
+```
+
+## **Переменные.**
+
+**1. Всегда используйте let или const для объявления переменных.**
+>eslint: [no-undef, prefer-const](no-undef)
+
+:x: не надо так :point_down:
+```
+uperPower = new SuperPower();
+```
+
+:white_check_mark: надо так :point_down:
+```
+const superPower = new SuperPower();
+```
+
+**2. Не нужно неинициализированной переменной задавать значение undefined, это значение присваивается автоматически.**
+>eslint: [no-undef](no-undef)
+
+:x: не надо так :point_down:
+```
+let foo = undefined;
+let bar = undefined;
+```
+
+:white_check_mark: надо так :point_down:
+```
+let foo;
+let bar;
+```
+
+**3. Используйте let и const для объявления каждой переменной.**
+>eslint: [one-var](one-var)
+
+:x: не надо так :point_down:
+```
+const items = getItems(),
+    goSportsTeam = true,
+    dragonball = 'z';
+```
+
+:white_check_mark: надо так :point_down:
+```
+const items = getItems();
+const goSportsTeam = true;
+const dragonball = 'z';
+```
+
+**4. Не используйте множественное присваивание. Такие конструкции создают неявные глобальные переменные.**
+>eslint: [no-multi-assign, one-var](no-multi-assign)
+
+:x: не надо так :point_down:
+```
+(function example() {
+  let a = b = c = 1;
+}());
+
+console.log(a); // ошибка ReferenceError
+console.log(b); // 1
+console.log(c); // 1
+```
+
+:white_check_mark: надо так :point_down:
+```
+(function example() {
+  let a = 1;
+  let b = a;
+  let c = a;
+}());
+
+console.log(a); // ошибка ReferenceError
+console.log(b); // ошибка ReferenceError
+console.log(c); // ошибка ReferenceError
+```
+
+**5. Не переноси строку после оператора присваивания.**
+>eslint: [operator-linebreak](operator-linebreak)
+
+При нарушении правила [max-len](max-len) оборачивай присваивание в скобки.
+
+:x: не надо так :point_down:
+```
+const foo =
+  superLongLongLongLongLongLongLongLongFunctionName();
+
+
+const foo
+  = 'superLongLongLongLongLongLongLongLongString';
+```
+
+:white_check_mark: надо так :point_down:
+```
+const foo = (
+  superLongLongLongLongLongLongLongLongFunctionName()
+);
+
+const foo = 'superLongLongLongLongLongLongLongLongString';
+```
+
+
+**6. Не объявляй неиспользуемые переменные.**
+>eslint: [no-unused-vars](no-unused-vars)
+
+:x: не надо так :point_down:
+```
+let x = 0;
+let y = 1; // Переменная не используется
+
+function getX() {
+    return x + 1;
 }
 ```
 
+:white_check_mark: надо так :point_down:
+```
+let x = 0;
 
+function getX() {
+    return x + 1;
+}
+```
+
+## **Объявление переменных.**
+
+**1. Если ты не переназначаешь переменную, то используй const для ее объявления. И наоборот.**
+>eslint: [prefer-const, no-const-assign](no-undef)
+
+:x: не надо так :point_down:
+```
+var a = 1;
+var b = 2;
+
+var count = 1;
+if (true) {
+  count += 1;
+}
+```
+
+:white_check_mark: надо так :point_down:
+```
+const a = 1;
+const b = 2;
+
+let count = 1;
+if (true) {
+  count += 1;
+}
+```
+
+**2. Не используй var. Используй let и const.**
+>eslint: [no-var](no-var)
+
+:x: не надо так :point_down:
+```
+var x = "y";
+var CONFIG = {};
+```
+
+:white_check_mark: надо так :point_down:
+```
+let x = "y";
+const CONFIG = {};
+```
+
+
+## **Запятые.**
+
+** Запятые не должны быть в начале строки.**
+>eslint: [comma-style](comma-style)
+
+:x: не надо так :point_down:
+```
+const story = [
+    once
+  , upon
+  , aTime
+];
+```
+
+:white_check_mark: надо так :point_down:
+```
+const story = [
+  once,
+  upon,
+  aTime,
+];
+```
+
+**2. Ставь запятую после последнего свойства в объектах и массивах .Они делают git-diff более чистым**
+>eslint: [comma-dangle](comma-dangle)
+
+git-diff без использования оконечной запятой
+
+```
+const hero = {
+     firstName: 'Florence',
+-    lastName: 'Nightingale'
++    lastName: 'Nightingale',
++    inventorOf: ['coxcomb chart', 'modern nursing']
+};
+```
+git diff с использованием оконечной запятой
+
+```
+const hero = {
+     firstName: 'Florence',
+     lastName: 'Nightingale',
++    inventorOf: ['coxcomb chart', 'modern nursing'],
+};
+```
+
+:x: не надо так :point_down:
+```
+const hero = {
+  firstName: 'Dana',
+  lastName: 'Scully'
+};
+```
+
+:white_check_mark: надо так :point_down:
+```
+const hero = {
+  firstName: 'Dana',
+  lastName: 'Scully',
+};
+
+// Но учтите, что ставить запятую после “rest” элемента нельзя
+function createHero(
+  firstName,
+  lastName,
+  inventorOf,
+  ...heroArgs
+) {
+  // does nothing
+}
+```
